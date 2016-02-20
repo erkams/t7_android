@@ -5,6 +5,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
+        renderscriptTargetApi 22
+        renderscriptSupportModeEnabled true
         applicationId "com.getirhackathon"
         minSdkVersion 17
         targetSdkVersion 23
@@ -22,8 +24,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'fr.tvbarthel.blurdialogfragment:lib:2.1.5'
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.google.code.gson:gson:2.6.1'
     compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.android.gms:play-services:8.1.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }

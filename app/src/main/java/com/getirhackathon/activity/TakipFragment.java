@@ -14,17 +14,15 @@ import com.getirhackathon.R;
  */
 public class TakipFragment extends Fragment {
 
-
     public TakipFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tap, container, false);
+        return inflater.inflate(R.layout.fragment_takip, container, false);
     }
 
 

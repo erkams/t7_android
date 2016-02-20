@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.getirhackathon.activity.DetailFragment;
 import com.getirhackathon.activity.DrawerFragment;
 import com.getirhackathon.activity.ProductsFragment;
 import com.getirhackathon.activity.SepetFragment;
@@ -119,5 +120,15 @@ public class MainActivity extends AppCompatActivity implements DrawerFragment.Fr
     @Override
     public void onDrawerItemSelected(View view, int position) {
         displayView(position);
+    }
+
+    public void switchContent(DetailFragment frag) {
+        frag.show(getFragmentManager(),"blur");
+        /*
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.show(id, fragment, fragment.toString());
+        ft.addToBackStack(null);
+        ft.commit();
+    */
     }
 }
